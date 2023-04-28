@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms | Henrique Reis</title>
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+    <div>
+    <form form action="login.html" method="post">
+    <center>
+        <h2> Dados Pessoais</h2>
+    
+            <label>Nome Completo:</label> <input type="text" size="34" maxlength="65"><br><br>
+            <label>Sexo:</label> <input type="radio" name="Sexo" value="Fem"> Feminino <input type="radio" name="Sexo" value="Neutro"> Neutro <input type="radio" name="Sexo" value="Masc"> Masculino <br><br>
+            <label>Estado Civil:</label> <input list="EstadoCiv"> <datalist id="EstadoCiv"><option>Solteiro</option><option>Casado</option><option>Separado</option><option>Divorciado</option><option>Viúvo</option></datalist> <br><br>
+            <label>Conhecimento em Informática:</label> <br>
+                <div>
+                    <input type="checkbox" name="Conhecimento" value="Conhecimento"> Windows <input type="checkbox" name="Conhecimento" value="Conhecimento"> Word  <input type="checkbox" name="Conhecimento" value="Conhecimento"> Excel <br>
+                    <input type="checkbox" name="Conhecimento" value="Conhecimento"> PowerPoint <input type="checkbox" name="Conhecimento" value="Conhecimento"> Access  <input type="checkbox" name="Conhecimento" value="Conhecimento"> Internet
+                </div>
+            <br><label>Conte um pouco a sua experiência:</label><br>
+            <textarea id="Exp" name="exp" rows="5" cols="50"></textarea><br><br>
+    </form>
+    <form action="login.html" method="get">
+        <h2>Dados de Acesso</h2>
+            <label>E-mail:</label> <input type="email" size="43" maxlength="80" name="user"><br><br>
+            <label>Senha :</label> <input type="password" size="43" maxlength="12" name="password"><br><br>
+            <label>Confirmação:</label> <input type="password" size="37" maxlength="12" name="password_confirmacao"><br><br>
+            <input type="submit" value="Enviar"> <input type="reset" value="Apagar">
+    </center>
+    </form>
+    </div> 
+</body>
+</html>
